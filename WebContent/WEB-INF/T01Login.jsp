@@ -4,9 +4,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>学生ログイン</title>
 </head>
 <body>
+
+<from action="<%=request.getContextPath()%>" method="POST">
+   <h1>ログイン</h1>
+   <table>
+       <tr>
 
 
 
