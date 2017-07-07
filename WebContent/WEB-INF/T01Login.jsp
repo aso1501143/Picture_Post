@@ -8,6 +8,11 @@
 </head>
 <body>
 
+<from action="<%=request.getContextPath()%>" method="POST">
+   <h1>ログイン</h1>
+   <table>
+       <tr>
+
 
 
 </body>
