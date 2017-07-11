@@ -18,7 +18,7 @@
 <td><a><img src="./img/c.png"width="50%">
 <p>作品タイトル<br><input type="submit" value ="投票"></p>
 </a></td>
-<td><a><img src="./img/a.png"width="50%"><p>作品タイトル<br><input type="submit" value ="投票"></p></a></td>
+<td><a><img src="./img/a.jpg"width="50%"><p>作品タイトル<br><input type="submit" value ="投票"></p></a></td>
 <td><a><img src="./img/c.png"width="50%" ><p>作品タイトル<br><input type="submit" value ="投票"></p></a></td>
 <td><a><img src="./img/c.png"width="50%" ><p>作品タイトル<br><input type="submit" value ="投票"></p></a></td>
 </tr>
