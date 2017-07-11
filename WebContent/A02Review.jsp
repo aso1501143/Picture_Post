@@ -8,7 +8,7 @@
 </head>
 <body>
 
-
+<h1>投票数確認</h1>
 
 <HR size="5" width="100%" color="#66ffff">
 
