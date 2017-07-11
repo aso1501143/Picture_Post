@@ -30,7 +30,7 @@
 							<p><c:out value="${data.categoryname}" /></p>
 						</div>
 					</td>
-						</tr>
+
 
 </table></form>
 <input type="submit" value ="投票">
