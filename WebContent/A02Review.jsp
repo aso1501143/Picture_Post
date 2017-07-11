@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<h1>トップ(商品カテゴリ検索)</h1>
+
 
 <HR size="5" width="100%" color="#66ffff">
 
