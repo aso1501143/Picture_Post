@@ -12,45 +12,17 @@
 
 
 
+<table border="0">
+<tr>
 
-作品タイトル<br>
-
-
-		<form action="Category" method="post">
-			<table>
-					<c:if test="${status.first}">
-						<tr>
-					</c:if>
-					<td>
-						<div style="text-align: center;">
-							<p>
-								<input type="image" src="img/${data.picture}"
-		width="100" height="100" alt="画像" name = "categoryid" value="${data.categoryid}">
-							</p>
-							<p><c:out value="${data.categoryname}" /></p>
-						</div>
-					</td>
-
-
-</table></form>
-<input type="submit" value ="投票">
-
-
-作品タイトル<br>
-
-<input type="submit" value ="投票"><br>
-
-
-
-作品タイトル<br>
-
-<input type="submit" value ="投票"><br>
-
-
-作品タイトル<br>
-
-<input type="submit" value ="投票"><br>
-
+<td><a><img src="./img/c.png"width="50%">
+<p>作品タイトル<br><input type="submit" value ="投票"></p>
+</a></td>
+<td><a><img src="./img/a.jpg"width="50%"><p>作品タイトル<br><input type="submit" value ="投票"></p></a></td>
+<td><a><img src="./img/c.png"width="50%" ><p>作品タイトル<br><input type="submit" value ="投票"></p></a></td>
+<td><a><img src="./img/c.png"width="50%" ><p>作品タイトル<br><input type="submit" value ="投票"></p></a></td>
+</tr>
+</table>
 
 </body>
 </html>
