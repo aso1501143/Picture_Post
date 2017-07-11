@@ -5,27 +5,25 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>学生ログイン</title>
-<link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.css">
-<link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
 <div id="main">
-<form action="/T01Login" method="POST">
+<br>
+   <form action="/T01Login" method="POST">
 			<h1>ログイン</h1>
-			<div id="mid">
+			  <div id="mid">
 				<table>
-					<tr>
-						<td><span style="color: black"
-							class="glyphicon glyphicon-user"></span></td>
-						<td><input type="text" name="studentid"></td>
-					</tr>
-					<tr>
-						<td><span style="color: black"
-							class="glyphicon glyphicon-asterisk"></span></td>
-						<td><input type="password" name="passwd"></td>
-					</tr>
-				</table>
+			<tr>
+				<th>・ユーザー名</th>
+				<td><input type="text" name="name"></td>
+			</tr>
+
+			<tr>
+				<th>・パスワード</th>
+				<td><input type="password" name="pass"></td>
+			</tr>
+		       </table>
+
 				<button type="submit" class="btn btn-primary">
 					<span class="glyphicon glyphicon-arrow-down"></span>ログイン
 				</button>

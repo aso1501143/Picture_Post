@@ -13,21 +13,22 @@
 		<h1>ログイン</h1>
 			<div id="mid">
 				<table>
-					<tr>
-						<td><span style="color: black"
-							class="glyphicon glyphicon-user"></span></td>
-						<td><input type="text" name="studentid"></td>
-					</tr>
-					<tr>
-						<td><span style="color: black"
-							class="glyphicon glyphicon-asterisk"></span></td>
-						<td><input type="password" name="passwd"></td>
-					</tr>
-				</table>
-				<button type="submit" class="btn btn-primary">
+			<tr>
+				<th>・ユーザー名</th>
+				<td><input type="text" name="name"></td>
+			</tr>
+
+			<tr>
+				<th>・パスワード</th>
+				<td><input type="password" name="pass"></td>
+			</tr>
+		</table>
+
+
+		<button type="submit" class="btn btn-primary">
 					<span class="glyphicon glyphicon-arrow-down"></span>ログイン
 				</button>
-				<button type="button" class="btn btn-primary">
+		<button type="button" class="btn btn-primary">
 					<span class="glyphicon glyphicon-trash"></span>キャンセル
 				</button>
 
