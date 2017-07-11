@@ -13,25 +13,35 @@
 
 
 
-作品タイトル
+作品タイトル<br>
 
-<input type="submit" value ="投票"><br>
+	<td>
+						<div style="text-align: center;">
+							<p>
+								<input type="image" src="image/img/${data.picture}"
+		width="100" height="100" alt="画像" name = "categoryid" value="${data.categoryid}">
+							</p>
+							<p></p>
+						</div>
+					</td>
+
+<input type="submit" value ="投票">
 
 
-作品タイトル
+作品タイトル<br>
 
-<input type="submit" value ="投票"><br>
-
-
-
-作品タイトル
-
-<input type="submit" value ="投票"><br>
+<input type="submit" value ="投票">
 
 
-作品タイトル
 
-<input type="submit" value ="投票"><br>
+作品タイトル<br>
+
+<input type="submit" value ="投票">
+
+
+作品タイトル<br>
+
+<input type="submit" value ="投票">
 
 
 </body>
