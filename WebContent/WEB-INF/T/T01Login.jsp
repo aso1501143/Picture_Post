@@ -11,7 +11,15 @@
 <from action="<%=request.getContextPath()%>" method="POST">
    <h1>ログイン</h1>
    <table>
-       <tr>あ
+       <tr>
+          <td><span style="color:brack"
+              class="glyphicon glyphicon-user"></span></td>
+               	<td><input type="text" name="studentid"></td>
+             </tr>
+             <tr>
+             <td><span style="color:brack"
+              class="glyphicon glyphicon-user"></span></td>
+               	<td><input type="password" name="password"></td>
 
 
 
