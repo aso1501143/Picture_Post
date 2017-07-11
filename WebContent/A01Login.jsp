@@ -8,6 +8,25 @@
 </head>
 <body>
 
+<br>
+	<form action="/T01Login" method="POST">
+		<table>
+			<tr>
+				<th>・ユーザー名</th>
+				<td><input type="text" name="name"></td>
+			</tr>
+
+			<tr>
+				<th>・パスワード</th>
+				<td><input type="password" name="pass"></td>
+			</tr>
+		</table>
+
+	<li><input type="submit" value="ログイン"></li>
+		<input type="reset" value="リセット">
+	</form>
+
+
 
 
 </body>
