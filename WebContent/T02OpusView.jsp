@@ -15,33 +15,41 @@
 
 作品タイトル<br>
 
-	<td>
+
+		<form action="Category" method="post">
+			<table>
+					<c:if test="${status.first}">
+						<tr>
+					</c:if>
+					<td>
 						<div style="text-align: center;">
 							<p>
-								<input type="image" src="image/img/${data.picture}"
+								<input type="image" src="img/${data.picture}"
 		width="100" height="100" alt="画像" name = "categoryid" value="${data.categoryid}">
 							</p>
-							<p></p>
+							<p><c:out value="${data.categoryname}" /></p>
 						</div>
 					</td>
+						</tr>
 
+</table></form>
 <input type="submit" value ="投票">
 
 
 作品タイトル<br>
 
-<input type="submit" value ="投票">
+<input type="submit" value ="投票"><br>
 
 
 
 作品タイトル<br>
 
-<input type="submit" value ="投票">
+<input type="submit" value ="投票"><br>
 
 
 作品タイトル<br>
 
-<input type="submit" value ="投票">
+<input type="submit" value ="投票"><br>
 
 
 </body>
