@@ -8,11 +8,31 @@
 </head>
 <body>
 
-作品閲覧・投票
+作品閲覧・投票<br><br>
+
+
+
 
 作品タイトル
 
-投票
+<input type="submit" value ="投票"><br>
+
+
+作品タイトル
+
+<input type="submit" value ="投票"><br>
+
+
+
+作品タイトル
+
+<input type="submit" value ="投票"><br>
+
+
+作品タイトル
+
+<input type="submit" value ="投票"><br>
+
 
 </body>
 </html>
