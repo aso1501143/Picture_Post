@@ -14,14 +14,14 @@
 
 <table border="0">
 <tr>
-<td><a><img src="./img/a.gif"><p></p></a></td>
-<td><a><img src="./img/b.gif" ><p></p></a></td>
-<td><a><img src="./img/c.gif" ><p></p></a></td>
+<td><a><img src="./img/a.gif"><p>作品①</p></a></td>
+<td><a><img src="./img/b.gif" ><p>作品②</p></a></td>
+<td><a><img src="./img/c.gif" ><p>作品③</p></a></td>
 </tr>
 <tr>
-<td><a><img src="./img/d.gif" ><p></p></a></td>
-<td><a><img src="./img/e.png" ><p></p></a></td>
-<td><a><img src="./img/f.png" ><p></p></a></td>
+<td><a><img src="./img/d.gif" ><p>作品④</p></a></td>
+<td><a><img src="./img/e.png" ><p>作品⑤</p></a></td>
+<td><a><img src="./img/f.png" ><p>作品⑥</p></a></td>
 </tr>
 </table>
 
