@@ -8,6 +8,6 @@
 </head>
 <body>
 <a href="T01StudentsLogin">生徒</a>
-<a href="">管理者</a>
+<a href="A01ManagerLogin">管理者</a>
 </body>
 </html>

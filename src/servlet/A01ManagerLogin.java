@@ -10,16 +10,16 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Servlet implementation class T01StudentsLogin
+ * Servlet implementation class A01ManagerLogin
  */
-@WebServlet("/T01StudentsLogin")
-public class T01StudentsLogin extends HttpServlet {
+@WebServlet("/A01ManagerLogin")
+public class A01ManagerLogin extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public T01StudentsLogin() {
+    public A01ManagerLogin() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -31,9 +31,8 @@ public class T01StudentsLogin extends HttpServlet {
 		// TODO Auto-generated method stub
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 
-		RequestDispatcher rd = request.getRequestDispatcher("/T01Login.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("/A01Login.jsp");
 		rd.forward(request, response);
-
 
 	}
 
@@ -44,7 +43,7 @@ public class T01StudentsLogin extends HttpServlet {
 		// TODO Auto-generated method stub
 		//doGet(request, response);
 
-		RequestDispatcher rd = request.getRequestDispatcher("/T01Login.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("/AT01Login.jsp");
 		rd.forward(request, response);
 
 	}
