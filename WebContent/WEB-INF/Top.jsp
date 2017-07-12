@@ -7,9 +7,7 @@
 <title>トップ</title>
 </head>
 <body>
-
-< a href ="T01Login">生徒</a>
-< a href ="A01Login">管理者</a>
-
+<a href="T01StudentsLogin">生徒</a>
+<a href="">管理者</a>
 </body>
 </html>
