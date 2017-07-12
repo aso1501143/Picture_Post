@@ -10,7 +10,7 @@
 <div id="main">
 <br>
 	<form action="/T01Login" method="POST">
-		<h1>ログイン</h1>
+		<h1>管理者ログイン</h1>
 			<div id="mid">
 				<table>
 			<tr>
