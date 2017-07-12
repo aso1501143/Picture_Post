@@ -15,7 +15,7 @@
 <table border="0">
 <tr>
 
-<td><a><img src="./img/c.png"width="300" height="200"><div align="center">
+<td><a><a href=""><img src="./img/c.png"width="300" height="200"></a><div align="center">
 <p>作品タイトル<br><input type="submit" value ="投票"></div></p>
 </a></td>
 <td><a><img src="./img/a.jpg"width="300" height="200"><div align="center"><p>作品タイトル<br><input type="submit" value ="投票"></div></p></a></td>
