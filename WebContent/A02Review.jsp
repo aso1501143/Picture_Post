@@ -17,11 +17,8 @@
 <td><a><img src="./img/c.png"width="50%"><p>作品①<br>10票</p></a></td>
 <td><a><img src="./img/c.png"width="50%"><p>作品②<br>3票</p></a></td>
 <td><a><img src="./img/c.png"width="50%" ><p>作品③<br>80票</p></a></td>
-</tr>
-<tr>
 <td><a><img src="./img/c.png"width="50%" ><p>作品④<br>30票</p></a></td>
-<td><a><img src="./img/c.png"width="50%" ><p>作品⑤<br>30票</p></a></td>
-<td><a><img src="./img/c.png"width="50%"><p>作品⑥<br>40票</p></a></td>
+
 </tr>
 </table>
 
