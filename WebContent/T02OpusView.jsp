@@ -8,9 +8,9 @@
 </head>
 <body>
 
-作品閲覧・投票<br><br>
+<h1>作品閲覧・投票</h1><br><br>
 
-
+<HR size="5" width="100%" color="#66ffff">
 
 <table border="0">
 <tr>
@@ -21,6 +21,8 @@
 <td><a><img src="./img/d.jpg"width="300" height="200" ><div align="center"><p>作品タイトル<br><input type="submit" value ="投票"></div></p></a></td>
 </tr>
 </table>
+
+<HR size="5" width="100%" color="#6"WebContent/T02OpusView.jsp"6ffff">
 
 </body>
 </html>
