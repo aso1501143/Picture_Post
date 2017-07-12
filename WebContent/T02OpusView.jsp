@@ -15,12 +15,12 @@
 <table border="0">
 <tr>
 
-<td><a><img src="./img/c.png"width="300" height="200">
-<p>作品タイトル<br><input type="submit" value ="投票"></p>
+<td><a><img src="./img/c.png"width="300" height="200"><div align="center">
+<p>作品タイトル<br><input type="submit" value ="投票"></div></p>
 </a></td>
-<td><a><img src="./img/a.jpg"width="300" height="200"><p>作品タイトル<br><input type="submit" value ="投票"></p></a></td>
-<td><a><img src="./img/c.png"width="50%" ><p>作品タイトル<br><input type="submit" value ="投票"></p></a></td>
-<td><a><img src="./img/c.png"width="50%" ><p>作品タイトル<br><input type="submit" value ="投票"></p></a></td>
+<td><a><img src="./img/a.jpg"width="300" height="200"><div align="center"><p>作品タイトル<br><input type="submit" value ="投票"></div></p></a></td>
+<td><a><img src="./img/b.jpg"width="300" height="200" ><div align="center"><p>作品タイトル<br><input type="submit" value ="投票"><div></div></p></a></td>
+<td><a><img src="./img/d.jpg"width="300" height="200" ><div align="center"><p>作品タイトル<br><input type="submit" value ="投票"></div></p></a></td>
 </tr>
 </table>
 

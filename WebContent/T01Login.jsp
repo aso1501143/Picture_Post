@@ -9,9 +9,9 @@
 <body>
 <div id="main">
 <br>
-   <form action="/T01Login" method="POST">
-			<h1>ログイン</h1>
-			  <div id="mid">
+	<form action="/T01Login" method="POST">
+		<h1>学生ログイン</h1>
+			<div id="mid">
 				<table>
 			<tr>
 				<th>・ユーザー名</th>
@@ -22,19 +22,20 @@
 				<th>・パスワード</th>
 				<td><input type="password" name="pass"></td>
 			</tr>
-		       </table>
+		</table>
 
-				<button type="submit" class="btn btn-primary">
+
+
+		<button type="submit" class="btn btn-primary">
 					<span class="glyphicon glyphicon-arrow-down"></span>ログイン
 				</button>
-				<button type="button" class="btn btn-primary">
+		<button type="button" class="btn btn-primary">
 					<span class="glyphicon glyphicon-trash"></span>キャンセル
 				</button>
 
 			</div>
 		</form>
      </div>
-
 
 </body>
 </html>
