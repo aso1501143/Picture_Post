@@ -31,7 +31,7 @@ public class A01ManagerLogin extends HttpServlet {
 		// TODO Auto-generated method stub
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 
-		RequestDispatcher rd = request.getRequestDispatcher("/A01Login.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("/AT01Login.jsp");
 		rd.forward(request, response);
 
 
