@@ -8,6 +8,10 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import dao.AdminDAO;
+import model.Admin;
 
 /**
  * Servlet implementation class A01ManagerLogin
@@ -31,7 +35,7 @@ public class A01ManagerLogin extends HttpServlet {
 		// TODO Auto-generated method stub
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 
-		RequestDispatcher rd = request.getRequestDispatcher("/AT01Login.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("/A01Login.jsp");
 		rd.forward(request, response);
 
 
@@ -45,7 +49,33 @@ public class A01ManagerLogin extends HttpServlet {
 		// TODO Auto-generated method stub
 		//doGet(request, response);
 
-		RequestDispatcher rd = request.getRequestDispatcher("/AT01Login.jsp");
+		String path;
+
+		HttpSession session = request.getSession();
+
+		request.setCharacterEncoding("UTF-8");
+		String adminid = request.getParameter("adminid");
+		String password = request.getParameter("password");
+
+		AdminDAO admindao = new AdminDAO();
+		Admin admin = new Admin();
+
+		admin = admindao.getAdmin(adminid, password);
+
+		if (admin != null){
+			System.out.println("ログイン成功");
+			//
+			session.setAttribute("CommmonLoginUser", admin);
+			//
+			path  = "/WEB-INF/T/Managertop.jsp";
+
+		}else{
+			System.out.println("ログイン失敗");
+			request.setAttribute("errorMessage", "会員IDまたはパスワードが違います。");
+			path = "/WEB-INF/T/Managertop.jsp";
+		}
+
+		RequestDispatcher rd = request.getRequestDispatcher(path);
 		rd.forward(request, response);
 
 	}

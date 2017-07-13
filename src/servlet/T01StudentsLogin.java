@@ -8,6 +8,10 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import dao.UserDAO;
+import model.User;
 
 /**
  * Servlet implementation class T01StudentsLogin
@@ -44,9 +48,38 @@ public class T01StudentsLogin extends HttpServlet {
 		// TODO Auto-generated method stub
 		//doGet(request, response);
 
-		RequestDispatcher rd = request.getRequestDispatcher("/T01Login.jsp");
+		String path;
+
+		HttpSession session = request.getSession();
+
+		request.setCharacterEncoding("UTF-8");
+		int userid = Integer.parseInt(request.getParameter("userid"));
+		int password = Integer.parseInt(request.getParameter("password"));
+
+		UserDAO userdao = new UserDAO();
+		User user = new User();
+
+		user = userdao.getUser(userid, password);
+
+		if (user != null){
+			System.out.println("ログイン成功");
+			//
+			session.setAttribute("CommmonLoginUser", user);
+			//
+			path  = "/WEB-INF/T/Managertop.jsp";
+
+		}else{
+			System.out.println("ログイン失敗");
+			request.setAttribute("errorMessage", "会員IDまたはパスワードが違います。");
+			path = "/WEB-INF/T/Managertop.jsp";
+		}
+
+		RequestDispatcher rd = request.getRequestDispatcher(path);
 		rd.forward(request, response);
+	}
+
+
 
 	}
 
-}
+
