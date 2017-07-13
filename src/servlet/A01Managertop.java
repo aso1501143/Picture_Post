@@ -31,7 +31,7 @@ public class A01Managertop extends HttpServlet {
 		// TODO Auto-generated method stub
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 
-		RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/A01Login.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("/A01Login.jsp");
 		rd.forward(request, response);
 	}
 
@@ -42,7 +42,7 @@ public class A01Managertop extends HttpServlet {
 		// TODO Auto-generated method stub
 		//doGet(request, response);
 
-		RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF/A01Login.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("/A01Login.jsp");
 		rd.forward(request, response);
 	}
 

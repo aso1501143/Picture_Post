@@ -35,7 +35,7 @@ public class A01ManagerLogin extends HttpServlet {
 		// TODO Auto-generated method stub
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 
-		RequestDispatcher rd = request.getRequestDispatcher("/A01Login.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("/A02Review.jsp");
 		rd.forward(request, response);
 
 
@@ -67,7 +67,7 @@ public class A01ManagerLogin extends HttpServlet {
 			//
 			session.setAttribute("CommmonLoginUser", admin);
 			//
-			path  = "/WEB-INF/T/Managertop.jsp";
+			path  = "/A02Review.jsp";
 
 		}else{
 			System.out.println("ログイン失敗");

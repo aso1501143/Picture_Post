@@ -35,7 +35,7 @@ public class T01StudentsLogin extends HttpServlet {
 		// TODO Auto-generated method stub
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 
-		RequestDispatcher rd = request.getRequestDispatcher("/T01Login.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("/T02OpusView.jsp");
 		rd.forward(request, response);
 
 
@@ -66,12 +66,12 @@ public class T01StudentsLogin extends HttpServlet {
 			//
 			session.setAttribute("CommmonLoginUser", user);
 			//
-			path  = "/WEB-INF/T/Managertop.jsp";
+			path  = "/T02OpusView.jsp";
 
 		}else{
 			System.out.println("ログイン失敗");
 			request.setAttribute("errorMessage", "会員IDまたはパスワードが違います。");
-			path = "/WEB-INF/T/Managertop.jsp";
+			path = "/WEB-INF/Top.jsp";
 		}
 
 		RequestDispatcher rd = request.getRequestDispatcher(path);

@@ -9,7 +9,7 @@
 <body>
 <div id="main">
 <br>
-	<form action="/T01Login" method="POST">
+	<form action="/T01StudentsLogin" method="POST">
 		<h1>学生ログイン</h1>
 			<div id="mid">
 				<table>
