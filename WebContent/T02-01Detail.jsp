@@ -28,6 +28,10 @@
 				<input type="button" onclick="location.href='T02-01Detail.jsp'"
 					value="更新">
 			</p>
+			<p>
+				<input type="button" onclick="location.href='T02OpusView.jsp'"
+					value="戻る">
+			</p>
 			<c:if test="${not empty errorMsg}">
 			<p>${errorMsg}</p>
 			</c:if>
