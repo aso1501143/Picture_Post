@@ -31,7 +31,7 @@ public class T02detail extends HttpServlet {
 		// TODO Auto-generated method stub
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 
-		RequestDispatcher rd = request.getRequestDispatcher("/WEB-INF//T02-01Detail.jsp");
+		RequestDispatcher rd = request.getRequestDispatcher("/T02-01Detail.jsp");
 		rd.forward(request, response);
 	}
 
