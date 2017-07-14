@@ -72,6 +72,7 @@ public class T01StudentsLogin extends HttpServlet {
 			System.out.println("ログイン失敗");
 			request.setAttribute("errorMessage", "会員IDまたはパスワードが違います。");
 			path = "/Top.jsp";
+
 		}
 
 		RequestDispatcher rd = request.getRequestDispatcher(path);
