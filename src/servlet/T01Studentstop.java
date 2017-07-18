@@ -34,8 +34,8 @@ public class T01Studentstop extends HttpServlet {
 
 		RequestDispatcher rd = request.getRequestDispatcher("/T01Login.jsp");
 		rd.forward(request, response);
-	}
 
+	}
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
