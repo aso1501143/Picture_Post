@@ -11,7 +11,7 @@ import model.Admin;
 
 
 public class AdminDAO {
-	
+
 	// データソース
 	DataSource ds = null;
 	// データベース情報
@@ -23,14 +23,14 @@ public class AdminDAO {
 
 	/**
 	 * データベースへの接続処理を行うメソッド
-	 * 
+	 *
 	 * @return コネクション情報
 	 */
 	public Connection connection() throws Exception {
 
 		// データソースがなければ、context.xmlから読み込んで設定する
 		if (ds == null) {
-			ds = (DataSource) (new InitialContext()).lookup("java:comp/env/jdbc/MySQL");
+			ds = (DataSource) (new InitialContext()).lookup("java:comp/env/jdbc/pict_post");
 		}
 		con = ds.getConnection();
 
@@ -52,7 +52,7 @@ public class AdminDAO {
 			con.close();
 		}
 	}
-	
+
 	public Admin getAdmin(String adminid, String passwd) {
 		// ▼▼List (大きさが決まっていない配列のようなもの) 、メッセージ格納用変数 準備
 		Admin am = new Admin();

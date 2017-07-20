@@ -8,7 +8,7 @@ import javax.naming.InitialContext;
 import javax.sql.DataSource;
 
 public class VoteDAO {
-	
+
 	// データソース
 	DataSource ds = null;
 	// データベース情報
@@ -20,14 +20,14 @@ public class VoteDAO {
 
 	/**
 	 * データベースへの接続処理を行うメソッド
-	 * 
+	 *
 	 * @return コネクション情報
 	 */
 	public Connection connection() throws Exception {
 
 		// データソースがなければ、context.xmlから読み込んで設定する
 		if (ds == null) {
-			ds = (DataSource) (new InitialContext()).lookup("java:comp/env/jdbc/MySQL");
+			ds = (DataSource) (new InitialContext()).lookup("java:comp/env/jdbc/pict_post");
 		}
 		con = ds.getConnection();
 
