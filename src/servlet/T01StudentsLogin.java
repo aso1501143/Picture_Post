@@ -58,8 +58,7 @@ public class T01StudentsLogin extends HttpServlet {
 		UserDAO userdao = new UserDAO();
 		User user = new User();
 
-		user = userdao.getUser(userid, password);
-
+        user = userdao.getUser(userid, password);
 		if (user != null){
 			System.out.println("ログイン成功");
 			//
@@ -70,7 +69,7 @@ public class T01StudentsLogin extends HttpServlet {
 		}else{
 			System.out.println("ログイン失敗");
 			request.setAttribute("errorMessage", "会員IDまたはパスワードが違います。");
-			path =  "/T02OpusView.jsp";
+			path =  "/Top.jsp";
 
 		}
 
