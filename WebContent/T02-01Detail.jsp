@@ -12,14 +12,14 @@
 		<table align="center">
 			<tr>
 				<td><img border="3" width="500" height="500"
-					src="img/<c:out value="${post.pass}" />" /></td>
+					src="img/c" /></td>
 			</tr>
 			<tr>
-				<td>タイトル:<c:out value="${post.postname}" />
+				<td>タイトル:
 				</td>
 			</tr>
 		</table>
-		<form action="" method="post">
+		<form action="/PicturePost/T02detail" method="post">
 			<p>
 				コメント：<input type="text" name="coment" size="50" maxlength="100">
 				<input type="submit" value="送信する">
@@ -32,17 +32,12 @@
 				<input type="button" onclick="location.href='T02OpusView.jsp'"
 					value="戻る">
 			</p>
-			<c:if test="${not empty errorMsg}">
-			<p>${errorMsg}</p>
-			</c:if>
-			<c:forEach var="coment" items="${comentList}">
+		</form>
+		<c:forEach var="obj" items="${comment}">
 				<p>
-				-----------------------------------------------------------------------------------------------------------------------------
-					<c:out value="${coment.userid}"></c:out>
-					<c:out value="coment.text"></c:out>
+					<c:out value="${obj.comment}" />
 				</p>
 			</c:forEach>
-		</form>
 	</div>
 </body>
 </html>
