@@ -22,9 +22,6 @@
 </tr>
 </table>
 
-
-
-
 <HR size="5" width="100%" color="#6"WebContent/T02OpusView.jsp"6ffff">
 
 </body>
