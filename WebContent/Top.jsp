@@ -9,7 +9,7 @@
 <body>
 
 
-<a href="T01Studentstop">生徒</a>
+<a href="T01votetop">生徒</a>
 <a href="A01Managertop">管理者</a>
 </body>
 </html>
