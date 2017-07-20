@@ -10,7 +10,7 @@ import javax.sql.DataSource;
 import model.User;
 
 public class UserDAO {
-	
+
 	// データソース
 	DataSource ds = null;
 	// データベース情報
@@ -22,14 +22,14 @@ public class UserDAO {
 
 	/**
 	 * データベースへの接続処理を行うメソッド
-	 * 
+	 *
 	 * @return コネクション情報
 	 */
 	public Connection connection() throws Exception {
 
 		// データソースがなければ、context.xmlから読み込んで設定する
 		if (ds == null) {
-			ds = (DataSource) (new InitialContext()).lookup("java:comp/env/jdbc/MySQL");
+			ds = (DataSource) (new InitialContext()).lookup("java:comp/env/jdbc/pict_post");
 		}
 		con = ds.getConnection();
 
@@ -51,7 +51,7 @@ public class UserDAO {
 			con.close();
 		}
 	}
-	
+
 	// ログインユーザーの確認
 	public User getUser(int userid, int password) {
 		// ▼▼List (大きさが決まっていない配列のようなもの) 、メッセージ格納用変数 準備
