@@ -38,7 +38,6 @@ public class T01StudentsLogin extends HttpServlet {
 		RequestDispatcher rd = request.getRequestDispatcher("/T02OpusView.jsp");
 		rd.forward(request, response);
 
-
 	}
 
 	/**
@@ -78,8 +77,6 @@ public class T01StudentsLogin extends HttpServlet {
 		RequestDispatcher rd = request.getRequestDispatcher(path);
 		rd.forward(request, response);
 	}
-
-
 
 	}
 
