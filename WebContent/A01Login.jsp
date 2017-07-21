@@ -9,7 +9,9 @@
 <body>
 <div id="main">
 <br>
-	<form action="/A01ManagerLogin" method="POST">
+	<form method="post" action=	"A01ManagerLogin">
+
+
 		<h1>管理者ログイン</h1>
 			<!--<div id="mid">-->
 				<table>
