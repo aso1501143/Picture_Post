@@ -25,7 +25,6 @@
 		</table>
 
 
-
 		<button type="submit" class="btn btn-primary">
 					<span class="glyphicon glyphicon-arrow-down"></span>ログイン
 				</button>
