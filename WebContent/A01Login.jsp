@@ -14,7 +14,7 @@
 S
 
 
->>>>>>> branch 'master' of https://github.com/aso1501143/Picture_Post.git
+
 		<h1>管理者ログイン</h1>
 			<!--<div id="mid">-->
 				<table>
