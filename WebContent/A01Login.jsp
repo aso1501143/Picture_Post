@@ -9,9 +9,8 @@
 <body>
 <div id="main">
 <br>
-<<<<<<< HEAD
+
 	<form method="post" action=	"A01ManagerLogin">
-S
 
 
 
