@@ -11,7 +11,7 @@
 <br>
 	<form method="post" action="T01StudentsLogin">
 		<h1>学生ログイン</h1>
-			<div id="mid">
+			<!--<div id="mid">-->
 				<table>
 			<tr>
 				<th>・ユーザー名</th>
