@@ -21,6 +21,8 @@
 <td><img src="./img/d.jpg"width="300" height="200" ><div align="center">作品タイトル<br><input type="submit" value ="投票"></div></td>
 </tr>
 </table>
+<form action="/PicturePost/T02detail0" method="post">
+<input type="button" value="つぎへ"></form>
 
 
 <HR size="5" width="100%" color="#6"WebContent/T02OpusView.jsp"6ffff">

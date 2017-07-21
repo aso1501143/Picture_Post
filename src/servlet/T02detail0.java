@@ -15,16 +15,16 @@ import dao.CommentsDAO;
 import model.Comments;
 
 /**
- * Servlet implementation class T02detail
+ * Servlet implementation class T02detail0
  */
-@WebServlet("/T02detail")
-public class T02detail extends HttpServlet {
+@WebServlet("/T02detail0")
+public class T02detail0 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public T02detail() {
+    public T02detail0() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -35,21 +35,7 @@ public class T02detail extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
-
-		HttpSession session = request.getSession();
-
-		request.setCharacterEncoding("UTF-8");
-
-		CommentsDAO commentsdao = new CommentsDAO();
-		ArrayList<Comments> commentList = commentsdao.getComment();
-
-		request.setAttribute("comment", commentList);
-
-		RequestDispatcher rd = request.getRequestDispatcher("/T02-01Detail.jsp");
-		rd.forward(request, response);
 	}
-
-
 
 	/**
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
@@ -57,17 +43,10 @@ public class T02detail extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		//doGet(request, response);
-
 		HttpSession session = request.getSession();
 
-		int postid = 1;
-		String comment = request.getParameter("comment");
+		request.setCharacterEncoding("UTF-8");
 
-		//コメント挿入
-		CommentsDAO commentsDao = new CommentsDAO();
-		commentsDao.insertComment(postid,comment);
-
-		//コメント受け取り
 		CommentsDAO commentsdao = new CommentsDAO();
 		ArrayList<Comments> commentList = commentsdao.getComment();
 
