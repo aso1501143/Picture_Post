@@ -38,7 +38,6 @@ public class T01StudentsLogin extends HttpServlet {
 		RequestDispatcher rd = request.getRequestDispatcher("/T02OpusView.jsp");
 		rd.forward(request, response);
 
-
 	}
 
 	/**
@@ -55,6 +54,8 @@ public class T01StudentsLogin extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 		int userid = Integer.parseInt(request.getParameter("userid"));
 		int password = Integer.parseInt(request.getParameter("password"));
+
+
 
 		UserDAO userdao = new UserDAO();
 		User user = new User();
@@ -77,8 +78,6 @@ public class T01StudentsLogin extends HttpServlet {
 		RequestDispatcher rd = request.getRequestDispatcher(path);
 		rd.forward(request, response);
 	}
-
-
 
 	}
 

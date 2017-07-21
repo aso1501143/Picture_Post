@@ -11,19 +11,18 @@
 <br>
 	<form method="post" action="T01StudentsLogin">
 		<h1>学生ログイン</h1>
-			<div id="mid">
+			<!--<div id="mid">-->
 				<table>
 			<tr>
 				<th>・ユーザー名</th>
-				<td><input type="text" name="name"></td>
+				<td><input type="text" name="userid"></td>
 			</tr>
 
 			<tr>
 				<th>・パスワード</th>
-				<td><input type="password" name="pass"></td>
+				<td><input type="password" name="password"></td>
 			</tr>
 		</table>
-
 
 
 		<button type="submit" class="btn btn-primary">

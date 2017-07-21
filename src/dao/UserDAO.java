@@ -29,7 +29,7 @@ public class UserDAO {
 
 		// データソースがなければ、context.xmlから読み込んで設定する
 		if (ds == null) {
-			ds = (DataSource) (new InitialContext()).lookup("java:comp/env/jdbc/pict_post");
+			ds = (DataSource) (new InitialContext()).lookup("java:comp/env/jdbc/MySQL");
 		}
 		con = ds.getConnection();
 
@@ -85,6 +85,7 @@ public class UserDAO {
 		}
 		return ur;
 	}
+
 
 
 }

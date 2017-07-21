@@ -25,6 +25,7 @@
 <form action="/PicturePost/T02detail0" method="post">
 <input type="button" value="つぎへ"></form>
 
+
 <HR size="5" width="100%" color="#6"WebContent/T02OpusView.jsp"6ffff">
 
 </body>
