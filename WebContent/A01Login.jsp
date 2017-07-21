@@ -11,16 +11,16 @@
 <br>
 	<form action="/A01ManagerLogin" method="POST">
 		<h1>管理者ログイン</h1>
-			<div id="mid">
+			<!--<div id="mid">-->
 				<table>
 			<tr>
 				<th>・ユーザー名</th>
-				<td><input type="text" name="name"></td>
+				<td><input type="text" name="adminid"></td>
 			</tr>
 
 			<tr>
 				<th>・パスワード</th>
-				<td><input type="password" name="pass"></td>
+				<td><input type="password" name="password"></td>
 			</tr>
 		</table>
 
