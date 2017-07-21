@@ -19,7 +19,7 @@
 				</td>
 			</tr>
 		</table>
-		<form action="/PicturePost/T02detail" method="post">
+		<form action="/PicturePost/T03detail" method="post">
 			<p>
 				コメント：<input type="text" name="coment" size="50" maxlength="100">
 				<input type="submit" value="送信する">
