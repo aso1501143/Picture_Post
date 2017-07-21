@@ -72,7 +72,7 @@ public class A01ManagerLogin extends HttpServlet {
 		}else{
 			System.out.println("ログイン失敗");
 			request.setAttribute("errorMessage", "会員IDまたはパスワードが違います。");
-			path = "/A01Managertop.jsp";
+			path = "/Top.jsp";
 		}
 
 		RequestDispatcher rd = request.getRequestDispatcher(path);
