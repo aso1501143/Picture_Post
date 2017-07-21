@@ -15,12 +15,12 @@
 				<table>
 			<tr>
 				<th>・ユーザー名</th>
-				<td><input type="text" name="name"></td>
+				<td><input type="text" name="userid"></td>
 			</tr>
 
 			<tr>
 				<th>・パスワード</th>
-				<td><input type="password" name="pass"></td>
+				<td><input type="password" name="password"></td>
 			</tr>
 		</table>
 
