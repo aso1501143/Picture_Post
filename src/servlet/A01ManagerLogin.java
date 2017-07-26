@@ -67,7 +67,7 @@ public class A01ManagerLogin extends HttpServlet {
 			//
 			session.setAttribute("CommmonLoginUser", admin);
 			//
-			path  = "/A02Review.jsp";
+			path  = "/A01-1top.jsp";
 
 		}else{
 			System.out.println("ログイン失敗");

@@ -4,11 +4,14 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>トップ</title>
+<title>管理用メイン画面</title>
 </head>
 <body>
 
-<a href="T01votetop">投票</a>
-<a href="A01Managertop">管理者</a>
+	<a href="A02Reviewtop">投票数確認画面へ</a>
+
+	<a href="A02Control">受付開始・終了画面へ</a>
+
+
 </body>
 </html>
