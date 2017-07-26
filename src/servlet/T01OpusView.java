@@ -8,22 +8,18 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-
-import dao.UserDAO;
-import model.User;
 
 /**
- * Servlet implementation class T01StudentsLogin
+ * Servlet implementation class T01OpusView
  */
-@WebServlet("/T01StudentsLogin")
-public class T01StudentsLogin extends HttpServlet {
+@WebServlet("/T01OpusView")
+public class T01OpusView extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public T01StudentsLogin() {
+    public T01OpusView() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -38,6 +34,7 @@ public class T01StudentsLogin extends HttpServlet {
 		RequestDispatcher rd = request.getRequestDispatcher("/T02OpusView.jsp");
 		rd.forward(request, response);
 
+
 	}
 
 	/**
@@ -47,38 +44,9 @@ public class T01StudentsLogin extends HttpServlet {
 		// TODO Auto-generated method stub
 		//doGet(request, response);
 
-		String path;
-
-		HttpSession session = request.getSession();
-
-		request.setCharacterEncoding("UTF-8");
-		int userid = Integer.parseInt(request.getParameter("userid"));
-		int password = Integer.parseInt(request.getParameter("password"));
-
-
-
-		UserDAO userdao = new UserDAO();
-		User user = new User();
-
-        user = userdao.getUser(userid, password);
-		if (user != null){
-			System.out.println("ログイン成功");
-			//
-			session.setAttribute("CommmonLoginUser", user);
-			//
-			path  = "/T01-1top.jsp";
-
-		}else{
-			System.out.println("ログイン失敗");
-			request.setAttribute("errorMessage", "会員IDまたはパスワードが違います。");
-			path =  "/Top.jsp";
-
-		}
-
-		RequestDispatcher rd = request.getRequestDispatcher(path);
+		RequestDispatcher rd = request.getRequestDispatcher("/T02OpusView.jsp");
 		rd.forward(request, response);
-	}
 
 	}
 
-
+}
