@@ -15,16 +15,13 @@
 <table border="0">
 <tr>
 
-<td><a href="T02detail"><img src="./img/mg.jpg"width="300" height="200"></a><div align="center">作品タイトル<br><form><button type="submit" value ="vote">投票</button></form></div></td>
+<td><a href="T02detail"><img src="./img/mg.jpg"width="300" height="200"></a><div align="center">作品タイトル<br><form><button type="submit" name="postid" value ="1">投票</button></form></div></td>
 <td><img src="./img/a.jpg"width="300" height="200"><div align="center">作品タイトル<br><input type="submit" value ="投票"></div></td>
 <td><img src="./img/b.jpg"width="300" height="200" ><div align="center">作品タイトル<br><input type="submit" value ="投票"></div></td>
 <td><img src="./img/d.jpg"width="300" height="200" ><div align="center">作品タイトル<br><input type="submit" value ="投票"></div></td>
 
 </tr>
 </table>
-<form action="/PicturePost/T02detail0" method="post">
-<input type="button" value="つぎへ"></form>
-
 
 <HR size="5" width="100%" color="#6"WebContent/T02OpusView.jsp"6ffff">
 

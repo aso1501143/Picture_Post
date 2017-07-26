@@ -17,13 +17,13 @@ import model.Comments;
  * Servlet implementation class T02detail
  */
 @WebServlet("/T03detail")
-public class T03detail extends HttpServlet {
+public class T03Detail extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public T03detail() {
+    public T03Detail() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -54,6 +54,8 @@ public class T03detail extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		//doGet(request, response);
+
+		request.setCharacterEncoding("UTF-8");
 
 		int postid = 1;
 		String comment = request.getParameter("comment");

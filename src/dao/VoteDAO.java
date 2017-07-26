@@ -50,5 +50,28 @@ public class VoteDAO {
 		}
 	}
 
+	// insert
+	public void insertVote(int postid,int userid) {
+
+		try {
+			//
+			connection();
+
+			// SQL
+			String sql = "INSERT INTO vote(postid,userid) VALUES(?,?)";
+			stmt = con.prepareStatement(sql);
+			stmt.setInt(1, postid);
+			stmt.setInt(2, userid);
+			stmt.executeUpdate();
+
+		} catch (Exception e) {
+		} finally {
+			try {
+				close();
+			} catch (Exception e) {
+
+			}
+		}
+	}
 
 }
