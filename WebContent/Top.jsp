@@ -6,8 +6,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>トップ</title>
 </head>
-<body>
-
+<BODY background="./img/mn_sora_23.jpg">
 
 
 
