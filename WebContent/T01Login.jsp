@@ -10,7 +10,7 @@
 <div id="main">
 <br>
 	<form method="post" action="T01StudentsLogin">
-	
+
 		<h1>学生ログイン</h1>
 			<!--<div id="mid">-->
 				<table>
@@ -34,6 +34,7 @@
 				</button>
 
 			</div>
+		
 		</form>
      </div>
 
