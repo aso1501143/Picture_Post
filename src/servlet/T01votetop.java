@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/T01votetop")
 public class T01votetop extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -30,10 +30,10 @@ public class T01votetop extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
-		
+
 		RequestDispatcher rd = request.getRequestDispatcher("/T01Login.jsp");
 		rd.forward(request, response);
-		
+
 	}
 
 	/**
@@ -41,10 +41,10 @@ public class T01votetop extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		doGet(request, response);
-		
-		
-		
+		//doGet(request, response);
+
+
+
 		RequestDispatcher rd = request.getRequestDispatcher("/T01Login.jsp");
 		rd.forward(request, response);
 	}
