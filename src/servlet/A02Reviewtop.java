@@ -8,22 +8,18 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
-
-import dao.AdminDAO;
-import model.Admin;
 
 /**
- * Servlet implementation class A01ManagerLogin
+ * Servlet implementation class A02Reviewtop
  */
-@WebServlet("/A01ManagerLogin")
-public class A01ManagerLogin extends HttpServlet {
+@WebServlet("/A02Reviewtop")
+public class A02Reviewtop extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public A01ManagerLogin() {
+    public A02Reviewtop() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -38,8 +34,6 @@ public class A01ManagerLogin extends HttpServlet {
 		RequestDispatcher rd = request.getRequestDispatcher("/A02Review.jsp");
 		rd.forward(request, response);
 
-
-
 	}
 
 	/**
@@ -49,38 +43,9 @@ public class A01ManagerLogin extends HttpServlet {
 		// TODO Auto-generated method stub
 		//doGet(request, response);
 
-		String path;
-
-		HttpSession session = request.getSession();
-
-		request.setCharacterEncoding("UTF-8");
-		String adminid = request.getParameter("adminid");
-		String password = request.getParameter("password");
-
-		AdminDAO admindao = new AdminDAO();
-		Admin admin = new Admin();
-
-		admin = admindao.getAdmin(adminid, password);
-
-		if (admin != null){
-			System.out.println("ログイン成功");
-			//
-			session.setAttribute("CommmonLoginUser", admin);
-			//
-			path  = "/A01-1top.jsp";
-
-		}else{
-			System.out.println("ログイン失敗");
-			request.setAttribute("errorMessage", "会員IDまたはパスワードが違います。");
-
-			path =  "/Top.jsp";
-
-		}
-
-		RequestDispatcher rd = request.getRequestDispatcher(path);
+		RequestDispatcher rd = request.getRequestDispatcher("/A02Review.jsp");
 		rd.forward(request, response);
 
 	}
 
 }
-

@@ -66,7 +66,7 @@ public class T01StudentsLogin extends HttpServlet {
 			//
 			session.setAttribute("CommmonLoginUser", user);
 			//
-			path  = "/T02OpusView.jsp";
+			path  = "/T01-1top.jsp";
 
 		}else{
 			System.out.println("ログイン失敗");
