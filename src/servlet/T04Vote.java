@@ -13,7 +13,7 @@ import dao.VoteDAO;
 /**
  * Servlet implementation class T04
  */
-@WebServlet("/T04vote")
+@WebServlet("/T04Vote")
 public class T04Vote extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 

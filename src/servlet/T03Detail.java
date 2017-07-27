@@ -16,7 +16,7 @@ import model.Comments;
 /**
  * Servlet implementation class T02detail
  */
-@WebServlet("/T03detail")
+@WebServlet("/T03Detail")
 public class T03Detail extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -35,12 +35,10 @@ public class T03Detail extends HttpServlet {
 		// TODO Auto-generated method stub
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 
-		request.setCharacterEncoding("UTF-8");
-
 		CommentsDAO commentsdao = new CommentsDAO();
-		ArrayList<Comments> commentList = commentsdao.getComment();
+		ArrayList<Comments> commentList = commentsdao.getComments();
 
-		request.setAttribute("comment", commentList);
+		request.setAttribute("comments", commentList);
 
 		RequestDispatcher rd = request.getRequestDispatcher("/T02-01Detail.jsp");
 		rd.forward(request, response);
@@ -58,17 +56,17 @@ public class T03Detail extends HttpServlet {
 		request.setCharacterEncoding("UTF-8");
 
 		int postid = 1;
-		String comment = request.getParameter("comment");
+		String comments = request.getParameter("comments");
 
 		//コメント挿入
 		CommentsDAO commentsDao = new CommentsDAO();
-		commentsDao.insertComment(postid,comment);
+		commentsDao.insertComment(postid,comments);
 
 		//コメント受け取り
 		CommentsDAO commentsdao = new CommentsDAO();
-		ArrayList<Comments> commentList = commentsdao.getComment();
+		ArrayList<Comments> commentList = commentsdao.getComments();
 
-		request.setAttribute("comment", commentList);
+		request.setAttribute("comments", commentList);
 
 		RequestDispatcher rd = request.getRequestDispatcher("/T02-01Detail.jsp");
 		rd.forward(request, response);
