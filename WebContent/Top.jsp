@@ -7,8 +7,13 @@
 <title>トップ</title>
 </head>
 <body>
+<body style="background-image:/PicturePost/img/mn_sora_23.jpg ;">
+
 
 <a href="T01votetop">投票</a>
 <a href="A01Managertop">管理者</a>
+
+
+
 </body>
 </html>
