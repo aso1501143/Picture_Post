@@ -9,8 +9,12 @@
 <body>
 
 
+
+
 <a href="T01votetop">投票</a>
 <a href="A01Managertop">管理者</a>
+
+
 
 </body>
 </html>
