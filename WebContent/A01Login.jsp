@@ -6,10 +6,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>管理者ログイン</title>
 </head>
-<body>
+
 <div id="main">
 <br>
-
+<body background="./img/thlCVF5RN.jpg">
 	<form method="post" action=	"A01ManagerLogin">
 
 
