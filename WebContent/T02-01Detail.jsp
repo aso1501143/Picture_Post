@@ -11,18 +11,18 @@
 	<div style="text-align: center;">
 		<table align="center">
 			<tr>
-				<td><img border="3" width="500" height="500"
-					src="img/c" /></td>
+				<td><img border="3" width="500" height="500" src="img/c.png" /></td>
 			</tr>
 			<tr>
-				<td>タイトル:
-				</td>
+				<td>タイトル:</td>
 			</tr>
 		</table>
-		<form action="/PicturePost/T03detail" method="post">
+		<form action="/PicturePost/T03Detail" method="post">
 			<p>
-				コメント：<input type="text" name="coment" size="50" maxlength="100">
-				<input type="submit" value="送信する">
+				コメント<br>
+				<textarea name="comments" rows="4" cols="40"></textarea>
+				<br> <input type="submit" value="送信する"><input
+					type="reset" value="リセット">
 			</p>
 			<p>
 				<input type="button" onclick="location.href='T02-01Detail.jsp'"
@@ -33,11 +33,11 @@
 					value="戻る">
 			</p>
 		</form>
-		<c:forEach var="obj" items="${comment}">
-				<p>
-					<c:out value="${obj.comment}" />
-				</p>
-			</c:forEach>
+		<c:forEach var="obj" items="${comments}">
+			<p>
+				<c:out value="${obj.comments}" />
+			</p>
+		</c:forEach>
 	</div>
 </body>
 </html>
