@@ -5,42 +5,38 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>管理者ログイン</title>
+<link rel="stylesheet" href="bootstrap-3.3.7/css/bootstrap.css">
+<link rel="stylesheet" href="css/Logtemp.css">
+<body>
 </head>
+
 
 <div id="main">
 <br>
-<body background="./img/thlCVF5RN.jpg">
+
 	<form method="post" action=	"A01ManagerLogin">
 
+<body>
+<div class="login">
+  <div class="heading">
+    <h2>管理者用ログイン</h2>
+    <form method="post" action=	"A01ManagerLogin">
+branch 'master' of https://github.com/aso1501143/Picture_Post.git
 
+      <div class="input-group input-group-lg">
+        <span class="input-group-addon"><i class="fa fa-user"></i></span>
+        <input type="text" class="form-control" name="adminid" placeholder="ユーザー名">
+          </div>
 
-		<h1>管理者ログイン</h1>
-			<!--<div id="mid">-->
-				<table>
-			<tr>
-				<th>・ユーザー名</th>
-				<td><input type="text" name="adminid"></td>
-			</tr>
+        <div class="input-group input-group-lg">
+          <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+          <input type="password" name="password" class="form-control" placeholder="パスワード">
+        </div>
 
-			<tr>
-				<th>・パスワード</th>
-				<td><input type="password" name="password"></td>
-			</tr>
-		</table>
-
-
-
-		<button type="submit" class="btn btn-primary">
-					<span class="glyphicon glyphicon-arrow-down"></span>ログイン
-				</button>
-		<button type="button" class="btn btn-primary">
-					<span class="glyphicon glyphicon-trash"></span>キャンセル
-				</button>
-
-			</div>
-		</form>
-     </div>
-
+        <button type="submit" class="float">Login</button>
+       </form>
+ 		</div>
+ </div>
 
 </body>
 </html>
