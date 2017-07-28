@@ -6,11 +6,24 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></mata>
 <title>投票選択画面</title>
 </head>
-<body>
+<body background="./img/thT0LEM7AY.jpg">
 
-<a href="T01OpusView">作品閲覧へ</a>
+<h1>投票選択画面</h1>
 
-<a href="T05Fresult">最終結果へ</a>
+
+<form action="T01OpusView" method="Post">
+			<input type="submit" value="作品閲覧へ"><br>
+</form>
+
+<form action="T05Fresult" method="Post">
+			<input type="submit" value="最終結果へ"><br>
+</form>
+
+
+
+<!-- <a href="T01OpusView">作品閲覧へ</a> -->
+
+<!-- <a href="T05Fresult">最終結果へ</a> -->
 
 
 </body>
