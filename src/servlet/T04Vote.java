@@ -48,13 +48,13 @@ public class T04Vote extends HttpServlet {
 
 		request.setCharacterEncoding("UTF-8");
 
-		int postid = Integer.parseInt(request.getParameter("postid"));
+		int voteid = Integer.parseInt(request.getParameter("voteid"));
+		//useridはセッションからとる
 		int userid = 2;
-
 
 		// コメント挿入
 		VoteDAO voteDao = new VoteDAO();
-		voteDao.insertVote(postid,userid);
+		voteDao.insertVote(voteid,userid);
 
 		RequestDispatcher rd = request.getRequestDispatcher("/T02OpusView.jsp");
 		rd.forward(request, response);

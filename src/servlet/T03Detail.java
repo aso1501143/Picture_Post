@@ -54,8 +54,6 @@ public class T03Detail extends HttpServlet {
 		// TODO Auto-generated method stub
 		//doGet(request, response);
 
-		request.setCharacterEncoding("UTF-8");
-
 		int postid = 1;
 		String comments = request.getParameter("comments");
 
@@ -68,6 +66,7 @@ public class T03Detail extends HttpServlet {
 		ArrayList<Comments> commentList = commentsdao.getComments();
 
 		request.setAttribute("comments", commentList);
+		System.out.print(comments);
 
 		RequestDispatcher rd = request.getRequestDispatcher("/T02-01Detail.jsp");
 		rd.forward(request, response);
