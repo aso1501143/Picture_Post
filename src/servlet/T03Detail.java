@@ -35,6 +35,8 @@ public class T03Detail extends HttpServlet {
 		// TODO Auto-generated method stub
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 
+		request.setCharacterEncoding("UTF-8");
+
 		CommentsDAO commentsdao = new CommentsDAO();
 		ArrayList<Comments> commentList = commentsdao.getComments();
 
