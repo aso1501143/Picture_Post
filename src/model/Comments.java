@@ -12,14 +12,13 @@ public class Comments implements Serializable {
 
 	private int commentid;
 	private int postid;
-	private String comment = "";
+	private String comments;
 
 	//アクセッサ
 	public Comments(){}
-	public Comments(int commentid,int postid, String comment){
+	public Comments(int commentid,String comments){
 		this.commentid = commentid;
-		this.postid = postid;
-		this.comment = comment;
+		this.comments = comments;
 	}
 
 	public int getCommentid() {
@@ -38,12 +37,12 @@ public class Comments implements Serializable {
 		this.postid = postid;
 	}
 
-	public String getCommnet() {
-		return comment;
+	public String getCommnets() {
+		return comments;
 	}
 
-	public void setCommnet(String comment) {
-		this.comment = comment;
+	public void setCommnet(String comments) {
+		this.comments = comments;
 	}
 
 

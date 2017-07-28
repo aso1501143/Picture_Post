@@ -54,7 +54,7 @@ public class CommentsDAO {
 	}
 
 	// comment受け取り
-	public ArrayList<Comments> getComment() {
+	public ArrayList<Comments> getComments() {
 
 		ArrayList<Comments> commentList = new ArrayList<Comments>();
 
@@ -63,15 +63,15 @@ public class CommentsDAO {
 			connection();
 
 			// SQL
-			String sql = "SELECT commentid,postid,comments FROM comments";
+			String sql = "SELECT commentid,comments FROM comments";
 			stmt = con.prepareStatement(sql);
 			rs = stmt.executeQuery();
 
 			while (rs.next()) {
 				int id = rs.getInt("commentid");
-				int pid = rs.getInt("postid");
+				//int pid = rs.getInt("postid");
 				String text = rs.getString("comments");
-				Comments comments = new Comments(id, pid, text);
+				Comments comments = new Comments(id,text);
 				commentList.add(comments);
 			}
 		} catch (Exception e) {
@@ -89,7 +89,7 @@ public class CommentsDAO {
 	}
 
 	// insert
-	public void insertComment(int postid, String comment) {
+	public void insertComment(int postid, String comments) {
 
 		try {
 			//
@@ -99,7 +99,7 @@ public class CommentsDAO {
 			String sql = "INSERT INTO comments(postid,comments) VALUES(?,?)";
 			stmt = con.prepareStatement(sql);
 			stmt.setInt(1, postid);
-			stmt.setString(2, comment);
+			stmt.setString(2, comments);
 			stmt.executeUpdate();
 
 		} catch (Exception e) {
