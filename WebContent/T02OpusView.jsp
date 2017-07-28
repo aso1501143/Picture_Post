@@ -16,7 +16,7 @@
 <tr>
 
 
-<td><a href="T03Detail"><img src="./img/mg.jpg"width="300" height="200"></a><div align="center">ミ＝ゴ<br><form><button type="submit" name="postid" value ="1">投票</button></form></div></td>
+<td><a href="T03Detail"><img src="./img/mg.jpg"width="300" height="200"></a><div align="center">ミ＝ゴ<br><form action="/PicturePost/T04Vote" method="post"><button type="submit" name="voteid" value ="1">投票</button></form></div></td>
 <td><img src="./img/a.jpg"width="300" height="200"><div align="center">イルカ<br><input type="submit" value ="投票"></div></td>
 <td><img src="./img/b.jpg"width="300" height="200" ><div align="center">自然<br><input type="submit" value ="投票"></div></td>
 <td><img src="./img/d.jpg"width="300" height="200" ><div align="center">ラピュタ<br><input type="submit" value ="投票"></div></td>

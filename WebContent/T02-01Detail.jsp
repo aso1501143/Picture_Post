@@ -35,7 +35,9 @@
 		</form>
 		<c:forEach var="obj" items="${comments}">
 			<p>
-				<c:out value="${obj.comments}" />
+			コメント
+			____________________________________________________________________________________________________________
+			<c:out value="${obj.comments}" />
 			</p>
 		</c:forEach>
 	</div>

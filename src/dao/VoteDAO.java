@@ -27,7 +27,7 @@ public class VoteDAO {
 
 		// データソースがなければ、context.xmlから読み込んで設定する
 		if (ds == null) {
-			ds = (DataSource) (new InitialContext()).lookup("java:comp/env/jdbc/pict_post");
+			ds = (DataSource) (new InitialContext()).lookup("java:comp/env/jdbc/MySQL");
 		}
 		con = ds.getConnection();
 
@@ -51,16 +51,16 @@ public class VoteDAO {
 	}
 
 	// insert
-	public void insertVote(int postid,int userid) {
+	public void insertVote(int voteid,int userid) {
 
 		try {
 			//
 			connection();
 
 			// SQL
-			String sql = "INSERT INTO vote(postid,userid) VALUES(?,?)";
+			String sql = "INSERT INTO vote(voteid,userid) VALUES(?,?)";
 			stmt = con.prepareStatement(sql);
-			stmt.setInt(1, postid);
+			stmt.setInt(1, voteid);
 			stmt.setInt(2, userid);
 			stmt.executeUpdate();
 
