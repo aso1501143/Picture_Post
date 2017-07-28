@@ -21,7 +21,7 @@
   <div class="heading">
     <h2>管理者用ログイン</h2>
     <form method="post" action=	"A01ManagerLogin">
-branch 'master' of https://github.com/aso1501143/Picture_Post.git
+
 
       <div class="input-group input-group-lg">
         <span class="input-group-addon"><i class="fa fa-user"></i></span>
