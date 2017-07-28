@@ -11,10 +11,6 @@
 </head>
 
 
-<div id="main">
-<br>
-
-	<form method="post" action=	"A01ManagerLogin">
 
 <body>
 <div class="login">

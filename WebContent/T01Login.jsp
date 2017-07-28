@@ -12,11 +12,12 @@
 <div class="login">
   <div class="heading">
     <h2>投票者用ログイン</h2>
-    <form method="post" action=	"A01ManagerLogin">
 
-      <div class="input-group input-group-lg">
+    <form method="post" action=	"T01StudentsLogin">
+
+     <div class="input-group input-group-lg">
         <span class="input-group-addon"><i class="fa fa-user"></i></span>
-        <input type="text" class="form-control" name="userid" placeholder="ユーザー名">
+        <input type="text" class="form-control" name="adminid" placeholder="ユーザー名">
           </div>
 
         <div class="input-group input-group-lg">
@@ -28,7 +29,6 @@
        </form>
  		</div>
  </div>
-
 
 
 </body>
