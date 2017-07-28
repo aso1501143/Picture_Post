@@ -2,6 +2,7 @@ package servlet;
 
 import java.io.IOException;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -13,7 +14,7 @@ import dao.VoteDAO;
 /**
  * Servlet implementation class T04
  */
-@WebServlet("/T04vote")
+@WebServlet("/T04Vote")
 public class T04Vote extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
@@ -54,6 +55,9 @@ public class T04Vote extends HttpServlet {
 		// コメント挿入
 		VoteDAO voteDao = new VoteDAO();
 		voteDao.insertVote(postid,userid);
+
+		RequestDispatcher rd = request.getRequestDispatcher("/T02OpusView.jsp");
+		rd.forward(request, response);
 	}
 
 }
